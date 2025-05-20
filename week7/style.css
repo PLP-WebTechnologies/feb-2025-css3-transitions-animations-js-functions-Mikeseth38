@@ -1,0 +1,113 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Button styles with transition */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pulse animation for the animate button */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Box for animation demo */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+/* Animation classes */
+.rotate {
+    transform: rotate(360deg);
+    background-color: #e74c3c;
+}
+
+.bounce {
+    animation: bounce 0.8s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.expand {
+    transform: scale(1.5);
+    background-color: #9b59b6;
+}
+
+/* Theme styles */
+.light {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.dark {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.dark .btn {
+    background-color: #555;
+}
+
+.dark .btn:hover {
+    background-color: #666;
+}
+
+.blue {
+    background-color: #e6f2ff;
+    color: #003366;
+}
+
+.blue .btn {
+    background-color: #0066cc;
+}
+
+.blue .btn:hover {
+    background-color: #0052a3;
+}
